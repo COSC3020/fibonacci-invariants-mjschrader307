@@ -13,5 +13,5 @@ function fib(n) {
     return_arr.push(computeFib(i));
   }
 
-  return fib(n);
+  return return_arr;
 }
