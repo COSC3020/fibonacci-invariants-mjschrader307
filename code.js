@@ -15,3 +15,5 @@ function fib(n) {
 
   return return_arr;
 }
+
+console.log(fib(20));
