@@ -7,9 +7,9 @@ the results in an array.
 
 For example, the return value of `fib(7)` is the following array:
 
-| index |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |
+| index | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
 | ----- | --- | --- | --- | --- | --- | --- | --- | --- |
-| value |  0  |  1  |  1  |  2  |  3  |  5  |  8  |  13 |
+| value | 0   | 1   | 1   | 2   | 3   | 5   | 8   | 13  |
 
 Add your code in `code.js`. Test your new function; I've provided some basic
 testing code that uses [jsverify](https://jsverify.github.io/) in
@@ -27,3 +27,14 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+---
+
+**Answer**: Regardless of where the recursion is at, the line `return fib(n - 2) + fib(n - 1);` is returning the sum of the previous two fibonacci numbers. This sum is the definition of the next fibonacci number, meaning it is also the invariant.
+
+---
+
+**I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.**
