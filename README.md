@@ -30,7 +30,7 @@ your answer to this markdown file.
 
 ---
 
-**Answer**: Regardless of where the recursion is at, the line `return fib(n - 2) + fib(n - 1);` is returning the sum of the previous two fibonacci numbers, meaning that it is the invariant. This sum is, by definition, what the *n*th Fibonacci number is.
+**Answer**: Regardless of where the recursion is at, the line `return fib(n - 2) + fib(n - 1);` is returning the sum of the previous two fibonacci numbers. This sum is the definition of the next fibonacci number, meaning it is also the invariant.
 
 ---
 

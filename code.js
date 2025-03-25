@@ -1,19 +1,19 @@
-function computeFib(n) {
-    // Base cases
-    if (n <= 0) return 0;
-    if (n == 1) return 1;
+function fibArray(n, arr = [0, 1]) {
+  if (arr.length > n) {
+    return arr;
+  }
 
-    return computeFib(n - 2) + computeFib(n - 1);
+  const next = arr[arr.length - 1] + arr[arr.length - 2];
+  arr.push(next);
+
+  return buildArray(n, arr);
 }
 
 function fib(n) {
-  let return_arr = [];
+  // Base cases
+  if (n === 0) return [0];
+  if (n === 1) return [0, 1];
 
-  for (let i = 0; i < n + 1; i++) {
-    return_arr.push(computeFib(i));
-  }
-
-  return return_arr;
+  // Otherwise:
+  return buildArray(n);
 }
-
-console.log(fib(20));
