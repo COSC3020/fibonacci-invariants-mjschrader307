@@ -1,5 +1,5 @@
 function fibArray(n, arr = [0, 1]) {
-  if (arr.length >= n) {
+  if (arr.length > n) {
     return arr;
   }
 
