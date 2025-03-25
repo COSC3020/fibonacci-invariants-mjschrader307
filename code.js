@@ -1,12 +1,12 @@
 function fibArray(n, arr = [0, 1]) {
-  if (arr.length > n) {
+  if (arr.length >= n) {
     return arr;
   }
 
   const next = arr[arr.length - 1] + arr[arr.length - 2];
   arr.push(next);
 
-  return buildArray(n, arr);
+  return fibArray(n, arr);
 }
 
 function fib(n) {
@@ -15,5 +15,5 @@ function fib(n) {
   if (n === 1) return [0, 1];
 
   // Otherwise:
-  return buildArray(n);
+  return fibArray(n);
 }
